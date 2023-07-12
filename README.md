@@ -1,6 +1,6 @@
 # e-commerce
 
-Live Demo:  https://aya-adel-mohamed.github.io/e-commerce/
+Live Demo:  https://aya-adel-mohamed.github.io/E-Commerce/
 
 ![1](https://github.com/Aya-Adel-Mohamed/e-commerce/assets/115530179/670a4331-2c60-409b-908c-3a6f21bf3e0a)
 
