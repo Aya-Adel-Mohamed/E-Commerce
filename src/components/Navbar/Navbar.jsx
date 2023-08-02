@@ -43,6 +43,9 @@ export default function Navbar(props) {
                 <li className="nav-item me-2">
                   <Link className="nav-link text-white " to="register"><i className="fa-solid fa-user-plus me-2 logo"></i>Register</Link>
                 </li>
+                <li className="nav-item me-2">
+                <Link  className="nav-link text-white cursor" to='/cart' id="num"><i className="fa-solid fa-cart-shopping me-2 logo"></i>Cart ({state?.length})</Link >
+              </li>
               </>}
             </ul>
           </div>

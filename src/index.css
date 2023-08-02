@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Borel&family=Monoton&family=Righteous&family=Rubik+Moonrocks&display=swap');
 
 body {
   color: #000;
@@ -109,7 +110,7 @@ body {
   left: -27px;
   background: #f0534a;
   width: 13px;
-  height: 144px;
+  height: 221px;
   color: #f0534a;
   z-index: 99;
 
@@ -350,7 +351,7 @@ body {
 
 .icon-item {
 
-  border: 3px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   margin: 8px;
   padding: 6px 9px;
   border-radius: 50%;
@@ -419,6 +420,49 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
 .width-25{
   width: 25%;
 }
+
+.btn-bg:hover,.btn-bg:focus{
+
+  color: #fff!important;
+
+
+} 
+.womenContent{
+  top: 45%;
+  left: 30px;
+}
+.womenContent h4{
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: white;
+font-family: 'Borel', cursive;
+
+
+}
+.imgGap{
+  gap: 15px;
+}
+.imgBorder{
+  border-radius: 11px;
+box-shadow:   2px 2px 7px 0px #6c6c6c;;
+
+}
+.text{
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+font-family: 'Borel', cursive;
+align-self: center;
+transform: rotate(-20deg);
+}
+.text-men{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+font-family: 'Borel', cursive;
+align-self: center;
+}
+
 @media screen and (max-width:992px) {
   .mb-100 {
     margin-bottom: 0px;
@@ -454,7 +498,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   .content-title::before {
     left: -8px;
     width: 4px;
-    height: 64px;
+    height: 127px;
   }
   .navbar-brand{
     font-size: 16px !important;
@@ -464,6 +508,9 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   }
   .width-25{
     width: 50%;
+  }
+  .womenContent h4{
+    font-size: 2rem;
   }
 }
 
@@ -479,10 +526,18 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   .content-title::before {
     left: -11px;
     width: 7px;
-    height: 82px;
+    height: 148px;
+  }
+  .womenContent h4{
+    font-size: 2rem;
+  }
+
+}
+@media screen and (min-width:200px) and (max-width:450px){
+  .button-width{
+    width: 100%;
   }
 }
-
 @media screen and (min-width:601px) and (max-width:768px) {
   .content h1 {
     font-size: 40px;
@@ -495,7 +550,11 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   .content-title::before {
     left: -15px;
     width: 9px;
-    height: 92px;
+    height: 167px;
+
+  }
+  .womenContent h4{
+    font-size: 2rem;
   }
 }
 
@@ -511,7 +570,10 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   .content-title::before {
     left: -15px;
     width: 9px;
-    height: 110px;
+    height: 185px;
+  }
+  .womenContent h4{
+    font-size: 2rem;
   }
 }
 
@@ -527,7 +589,10 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   .content-title::before {
     left: -15px;
     width: 9px;
-    height: 120px;
+    height: 199px;
+  }
+  .womenContent h4{
+    font-size: 2rem;
   }
 }
 /* Animations */

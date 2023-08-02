@@ -14,10 +14,16 @@ import Cart from './components/Cart/Cart';
 import { useSelector } from 'react-redux';
 import Checkout from './components/Checkout/Checkout';
 import Profile from './components/Profile/Profile';
+import WomenProduct from './components/WomenProduct/WomenProduct';
+import MenProduct from './components/MenProduct/MenProduct';
+import JeweleryProduct from './components/JeweleryProduct/JeweleryProduct';
+
 
 function App() {
   
   let [userData,setUserData]= useState(null);
+ 
+
   function saveUser(){
    let token = localStorage.getItem("token");
 
@@ -53,14 +59,18 @@ function App() {
   }
   const routers = createHashRouter([
     {path:"/", element: <MainLayout userData={userData} logOut={logOut} />,children:[
-      {index:true,element:<ProductedRoute><Home/></ProductedRoute>},
+      {index:true,element:<Home />},
       {path:'register',element:<Register/>},
       {path:'login',element:<Login saveUser={saveUser}/>},
-      {path:'/products',element:<ProductedRoute><Products/></ProductedRoute>},
-      {path:'/products/:id',element:<ProductedRoute><Product/></ProductedRoute>},
-      {path:'/cart',element:<ProductedRoute><Cart saveUser={saveUser} /></ProductedRoute>},
+      {path:'/products',element:<Products/>},
+      {path:'/products/:id',element:<Product/>},
+      {path:'/cart',element:<Cart saveUser={saveUser} />},
       {path:'/checkout',element:<ProductedRoute><Checkout /></ProductedRoute>},
       {path:'/profile',element:<ProductedRoute><Profile userData={userData}/></ProductedRoute>},
+      {path:'/women',element:<WomenProduct/>},
+      {path:'/men',element:<MenProduct/>},
+      {path:'/jewelery',element:<JeweleryProduct/>},
+
 
       {path:'*',element:<ProductedRoute><NotFound/></ProductedRoute>}
     ]}

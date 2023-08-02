@@ -52,7 +52,7 @@ const Cart = () => {
                     <div className="row ">
                        
                         <h1 className='fw-bold text-center'>Your Cart is Empty</h1>
-              <Link to='/' className='text-center btn-bg width-25 mx-auto py-2 rounded-2 text-white px-3 text-decoration-none mt-3'>GO TO SHOPPING</Link>
+              <Link to='/' className='text-center btn-bg width-25 mx-auto py-2 rounded-2 text-white px-3 text-decoration-none mt-3 button-width'>GO TO SHOPPING</Link>
                     </div>
                 </div>
             </div>

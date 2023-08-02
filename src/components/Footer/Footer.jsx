@@ -5,12 +5,16 @@ export default function Footer() {
   return (
     <>
     <div className="bg-footer pb-3">
+      <div className="svg">
+        
+      </div>
       <div className="container">
         <div className="row justify-content-center align-items-center">
           <div className="col-md-4 d-flex align-items-center justify-content-center pt-1">
             <img src={imgFooter} alt="" className='imgw m-auto' />
           </div>
-          <div className="row justify-content-center align-items-center">
+          <h6 className='text-center text-men pt-3'>La Collection</h6>
+          <div className="row justify-content-center align-items-center ">
             <div className="col-md-4 d-flex align-items-center justify-content-center">
               <div className="icons">
                 <span className='icon-item'><a href="#" className='text-white'><i className="fa-brands fa-facebook"></i></a></span>
