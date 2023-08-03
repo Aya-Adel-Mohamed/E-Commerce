@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
 
 export default function Profile({userData}) {
   return (
     <>
+    <Helmet>
+      <title>E-Commerce | {userData.name }</title>
+    </Helmet>
     <div className='container py-5'>
        <div className="row justify-content-center align-items-center py-5">
         <div className="col-md-6 text-center py-5">

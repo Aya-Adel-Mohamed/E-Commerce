@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { Link } from 'react-router-dom';
 import Loading from '../Loading/Loading';
+import { Helmet } from 'react-helmet';
 
 export default function Product() {
     var state = useSelector((state)=> state.handleCart)
@@ -80,6 +81,9 @@ e.preventDefault();
     }
   return (
     <>
+    <Helmet>
+        <title>E-Commerce | Product </title>
+    </Helmet>
     <div className="container mt-l">
         <div className="row justify-content-center align-items-center vh-100 gx-lg-5">
             {loading ? <Loading />:<ShowProduct/>}

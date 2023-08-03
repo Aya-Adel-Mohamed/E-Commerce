@@ -1,10 +1,10 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { useDispatch } from 'react-redux'
-
-import { Link } from 'react-router-dom'
-
-import { delCart } from '../../redux/action'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { delCart } from '../../redux/action';
+import { Helmet } from 'react-helmet';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 
 
 const Cart = () => {
@@ -15,15 +15,17 @@ const Cart = () => {
     const dispatch = useDispatch()
     const handleClose = (item) => {
         dispatch(delCart(item))
- 
         localFilter = JSON.parse(localStorage.getItem('cart')).filter(users => users.id !== item.id);
-    
         localStorage.setItem('cart', JSON.stringify(localFilter))
    }
    
     const cartItems = (cartItem) => {
         return (
  <>        
+ <Helmet>
+    <title>E-Commerce | Cart</title>
+ </Helmet>
+ <ScrollToTop/>
             <div className="px-lg-4 mt" key={cartItem.id}>
                 <div className="container p-4 border-card">
                     <button onClick={() => handleClose(cartItem)} className='float-end btn btn-outline-color mt-3'><i className="fa-solid fa-trash-can fs-4"></i></button>
@@ -47,6 +49,10 @@ const Cart = () => {
 
     const emptyCart = () => {
         return (
+<>
+<Helmet>
+            <title>E-Commerce | Cart</title>
+         </Helmet>
             <div className="px-4 bg-cart rounded-3 py-0 mt py-lg-2">
                 <div className="container py-0 mt-lg-5 mt-0">
                     <div className="row ">
@@ -56,6 +62,7 @@ const Cart = () => {
                     </div>
                 </div>
             </div>
+</>
         );
     }
 

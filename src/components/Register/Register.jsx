@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import Joi from 'joi';
 import { useNavigate } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 export default function Register() {
     let [user, setUser] = useState({
@@ -74,6 +75,9 @@ export default function Register() {
     }
     return (
         <>
+        <Helmet>
+            <title>E-Commerce | Register Page</title>
+        </Helmet>
            <div className="background">
             <div className="content-login">
             <div className="mx-3 mx-md-0">

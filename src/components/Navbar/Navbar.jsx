@@ -31,8 +31,8 @@ export default function Navbar(props) {
               {userData ? <>  <li className="nav-item me-2">
                 <span className="nav-link text-white cursor" onClick={logOut}><i className="fa-solid fa-arrow-right-from-bracket me-2 logo"></i>Logout</span>
               </li>
-              <li className="nav-item me-2">
-                <Link  className="nav-link text-white cursor" to='/cart' id="num"><i className="fa-solid fa-cart-shopping me-2 logo"></i>Cart ({state?.length})</Link >
+              <li className="nav-item me-2 position-relative">
+                <Link  className="nav-link text-white cursor " to='/cart' id="num"><i className="fa-solid fa-cart-shopping me-2 logo"></i>Cart <span className="cart-number">{state?.length}</span></Link >
               </li><li className="nav-item">
         <Link className="nav-link text-white" to='profile'><i className='me-2 fa-solid fa-user color '></i>{userData.name}</Link>
       </li>
@@ -43,8 +43,8 @@ export default function Navbar(props) {
                 <li className="nav-item me-2">
                   <Link className="nav-link text-white " to="register"><i className="fa-solid fa-user-plus me-2 logo"></i>Register</Link>
                 </li>
-                <li className="nav-item me-2">
-                <Link  className="nav-link text-white cursor" to='/cart' id="num"><i className="fa-solid fa-cart-shopping me-2 logo"></i>Cart ({state?.length})</Link >
+                <li className="nav-item me-2 position-relative">
+                <Link  className="nav-link text-white cursor" to='/cart' id="num"><i className="fa-solid fa-cart-shopping me-2 logo"></i>Cart <span className="cart-number">{state?.length}</span></Link >
               </li>
               </>}
             </ul>

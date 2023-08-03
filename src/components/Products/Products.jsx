@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Loading from '../Loading/Loading';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import ScrollToTop from '../ScrollToTop/ScrollToTop.jsx';
 
 
 export default function Products() {
@@ -67,6 +69,10 @@ export default function Products() {
     }
     return (
         <>
+        <Helmet>
+            <title>E-Commerce | Products Page</title>
+        </Helmet>
+ <ScrollToTop/>
             <div className="bg-white product py-5 ">
                 <div className="container-fluid px-5 pt-3">
                     <div className="row mx-0 mx-md-5 pt-5">

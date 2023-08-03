@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Loading from '../Loading/Loading';
-import womenImg from '../../assets/images/women.jpg'
+import womenImg from '../../assets/images/women.jpg';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import ScrollToTop from '../ScrollToTop/ScrollToTop'
 
 
 export default function WomenProduct() {
@@ -30,10 +32,13 @@ export default function WomenProduct() {
 
     return (
         <>
+        <Helmet>
+            <title>E-Commerce | Women's Clothing</title>
+        </Helmet>
+        <ScrollToTop/>
             <div className="bg-white product py-5 ">
-
                 <div className="container pt-5">
-                    <div className="row justify-content-center   gap" >
+                    <div className="row justify-content-center gap" >
                 <div className="col-12">
                     <div className="womenImg position-relative">
                     <img src={womenImg} alt="" className='w-100' />
@@ -41,7 +46,6 @@ export default function WomenProduct() {
                     <h4>women's clothing</h4>
                     </div>
                     </div>
-         
                 </div>
                  {loading ? <Loading/>:<>
                  {data.filter((x) => x.category === "women's clothing").map((product) => {

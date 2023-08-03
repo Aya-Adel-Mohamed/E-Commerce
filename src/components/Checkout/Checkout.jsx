@@ -1,10 +1,10 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet';
+import ScrollToTop from '../ScrollToTop/ScrollToTop'
 
 const Checkout = () => {
     var state = useSelector((state) => state.handleCart)
-    
-
     var total = 0;
     const itemList = (item, index) => {
         total = total + item.price * item.qty;
@@ -20,6 +20,10 @@ const Checkout = () => {
 
     return (
         <>
+        <Helmet>
+            <title>E-Commerce | Checkout Page</title>
+        </Helmet>
+        <ScrollToTop/>
             <div className="container my-5 pt-5">
                 <div className="row g-5 pt-5">
                     <div className="col-md-5 col-lg-4 order-md-last">
