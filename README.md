@@ -2,7 +2,8 @@
 
 Live Demo:  https://aya-adel-mohamed.github.io/E-Commerce/
 
-![bg](https://github.com/Aya-Adel-Mohamed/E-Commerce/assets/115530179/aa4ba19d-9e1d-47de-ab5a-d4ddc9301fba)
+![bg](https://github.com/Aya-Adel-Mohamed/E-Commerce/assets/115530179/a7425cee-8d13-46c0-9d65-55afc1b6d896)
+
 
 # Getting Started with Create React App
 
