@@ -36,11 +36,21 @@ body {
   background-color: #f0534a !important;
   border-color: #f0534a !important;
 }
-
-.logo {
+.logo{
   color: #f0534a;
 }
-
+.fa-bag-shopping,.textAnimate {
+  color: #f0534a;
+  animation-name: lightAnimate;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+@keyframes lightAnimate {
+  0%{color:#f0534a;}
+  50%{color: #ffffff;}
+  100%{color: #f0534a;}
+  
+}
 .content-login {
   padding-top: 200px;
 }
@@ -424,10 +434,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
 
 .btn-bg:hover,
 .btn-bg:focus {
-
   color: #fff !important;
-
-
 }
 
 .womenContent {
@@ -440,8 +447,6 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   font-weight: bold;
   color: white;
   font-family: 'Borel', cursive;
-
-
 }
 
 .imgGap {
@@ -451,8 +456,6 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
 .imgBorder {
   border-radius: 11px;
   box-shadow: 2px 2px 7px 0px #6c6c6c;
-  ;
-
 }
 
 .text-2 {
@@ -487,10 +490,13 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   align-items: center;
 
 }
-.form-control:focus {
+.form-control:focus,.form-select:focus{
   border-color: #f0534a !important;
   outline: 0;
   box-shadow: 0 0 0 0.25rem #f2747445 !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
+  box-shadow: 0 0 0 3px #f2747445 !important;
 }
 .topToBtm{
   position: relative;
@@ -503,16 +509,16 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   
 }
 .iconStyle{
-  background-image: linear-gradient(45deg,#ffffffba,#ff0000a3);
+  background-image: linear-gradient(45deg,#2c292a,#ff00005c);
   border-radius: 50%;
   height: 60px;
   width: 60px;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
   transition: all .5s ease-in-out;
+  
 }
-
 
 @keyframes movebtn {
   0%{

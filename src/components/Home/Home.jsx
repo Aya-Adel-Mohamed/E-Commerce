@@ -29,7 +29,7 @@ export default function Home() {
             <h1 className='fw-bolder'>NEW SEASON ARRIVALS</h1>
             <p className='lead'>CHECK OUT ALL THE TRENDS</p>
             <Link to='/products'>
-              <button className=' btn btn-bg' >
+              <button className='btn btn-bg' >
                 Shop Now
               </button></Link>
           </div>
@@ -44,7 +44,7 @@ export default function Home() {
                 <img src={women} alt="" className='w-100' />
                 <div className="layer">
                   <div className="layer-content d-flex justify-content-center align-items-center h-100">
-                    <p className='fw-bold fs-3 text-white'>Women's Clothing</p>
+                    <p className='fw-bold fs-3  textAnimate'>Women's Clothing</p>
                   </div>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function Home() {
                 <img src={men} alt="" className='w-100' />
                 <div className="layer">
                   <div className="layer-content d-flex justify-content-center align-items-center h-100">
-                    <p className='fw-bold fs-3 text-white'>Men's Clothing</p>
+                    <p className='fw-bold fs-3  textAnimate'>Men's Clothing</p>
                   </div>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export default function Home() {
                 <img src={jewelery} alt="" className='w-100' />
                 <div className="layer">
                   <div className="layer-content d-flex justify-content-center align-items-center h-100">
-                    <p className='fw-bold fs-3 text-white'>Jewelery</p>
+                    <p className='fw-bold fs-3  textAnimate'>Jewelery</p>
                   </div>
                 </div>
               </div>

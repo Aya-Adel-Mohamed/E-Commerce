@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HiChevronUp } from "react-icons/hi";
+import { BiChevronsUp } from "react-icons/bi";
 
 
 const ScrollToTop = () => {
@@ -22,7 +22,7 @@ const ScrollToTop = () => {
     return (
         <div className='topToBtm'>
             <div className='iconPosition'>
-            {" "}{showTopBtn && ( <HiChevronUp className= 'iconStyle' onClick={goToTop} /> )}{" "}
+            {" "}{showTopBtn && ( <BiChevronsUp className= 'iconStyle' onClick={goToTop} /> )}{" "}
             </div>
         </div>
     );
